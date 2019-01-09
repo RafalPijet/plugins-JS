@@ -14,21 +14,19 @@ body {
   font-weight: bold;
 }
 
-.main-carousel {
-  .carousel-cell {
-    width: 100%;
-    max-height: calc(100vh / 2);
-    min-height: 250px;
-    text-align: center;
-    background-size: cover;
+.main-carousel .carousel-cell {
+  width: 100%;
+  max-height: calc(100vh / 2);
+  min-height: 250px;
+  text-align: center;
+  background-size: cover;
+}
 
-    img {
-      width: auto;
-      height: auto;
-      max-width: 600px;
-      max-height: 400px;
-    }
-  }
+.main-carousel .carousel-cell img {
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  max-height: 400px;
 }
 
 .restart {
@@ -48,3 +46,7 @@ body {
   background: #333;
 }
 
+/* Components */
+/* Sections */
+/* Pages / Views */
+/*# sourceMappingURL=style.css.map */
