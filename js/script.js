@@ -11,6 +11,7 @@
         imageLoaded: true,
         percentPosition: false
     });
+
     restartButton.addEventListener("click", function() {
         flkty.selectCell(0);
     })
