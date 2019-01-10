@@ -80,3 +80,7 @@ typings/
 .dynamodb/
 
 package-lock.json
+
+vendor/mustache.js
+
+styleguide.html

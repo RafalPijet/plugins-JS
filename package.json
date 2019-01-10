@@ -41,5 +41,8 @@
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.1.0",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "mustache": "^3.0.1"
   }
 }

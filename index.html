@@ -12,36 +12,20 @@
 </head>
 <body>
     <button class="restart">Restart</button>
-    <div class="main-carousel">
-        <div class="carousel-cell" id="carousel-cell1" style="background-image:
-            url(https://images.pexels.com/photos/988873/pexels-photo-988873.jpeg?cs=srgb&dl=abstract-architecture-attractive-988873.jpg&fm=jpg)">
-            <img src="images/statua-wolnosci.jpg" alt="sorry">
-            <div class="container">Statue of Liberty</div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell2" style="background-image:
-            url(https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?cs=srgb&dl=abstract-art-background-1484759.jpg&fm=jpg)">
-            <img src="images/manhattanbridge.jpg" alt="sorry">
-            <div class="container">Manhattan Bridge</div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3"style="background-image:
-            url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg)">
-            <img src="images/empire_state_building.jpg" alt="sorry">
-            <div class="container">Empire State Building</div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell4" style="background-image:
-            url(https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?cs=srgb&dl=background-canvas-close-up-1020320.jpg&fm=jpg)">
-            <img src="images/grand-central.jpeg" alt="sorry">
-            <div class="container">Grand Central Terminal</div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell5" style="background-image:
-            url(https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?cs=srgb&dl=abstract-attractive-backdrop-988872.jpg&fm=jpg)">
-            <img src="images/TimesSquare_bright.jpg" alt="sorry">
-            <div class="container">Time Square</div>
-        </div>
-    </div>
+    <div class="main-carousel" id="carousel"></div>
     <div class="progress-bar"></div>
+    <script id="template-slide-item" type="x-tmpl-mustache">
+        <div class="carousel-cell" id="carousel-cell{{id}}" style="background-image: url({{image}})">
+            <div class="container">
+                <header>{{title}}</header>
+                {{{description}}}
+            </div>
+        </div>
+    </script>
+    <script src="vendor/mustache.js"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/hash.js"></script>
+    <script src="js/slide_data.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
