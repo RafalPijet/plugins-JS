@@ -46,6 +46,11 @@ body {
   background: #333;
 }
 
+#map {
+  height: 450px;
+  width: 100%;
+}
+
 /* Components */
 /* Sections */
 /* Pages / Views */

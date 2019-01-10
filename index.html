@@ -14,6 +14,7 @@
     <button class="restart">Restart</button>
     <div class="main-carousel" id="carousel"></div>
     <div class="progress-bar"></div>
+    <div id="map"></div>
     <script id="template-slide-item" type="x-tmpl-mustache">
         <div class="carousel-cell" id="carousel-cell{{id}}" style="background-image: url({{image}})">
             <div class="container">
@@ -27,5 +28,6 @@
     <script src="vendor/hash.js"></script>
     <script src="js/slide_data.js"></script>
     <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ2Harl93wwxcaifcRaqnAPrVFThmylfU&callback=initMap"></script>
 </body>
 </html>

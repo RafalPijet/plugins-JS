@@ -29,4 +29,13 @@
         progressBar.style.width = progress * 100 + "%";
     })
 
+    window.initMap = function() {
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 12, center: slideData[0].coords});
+
+        for (var i = 0; i < slideData.length; i++) {
+            new google.maps.Marker({position: slideData[i].coords, map: map});
+        }
+    }
+
 })();
