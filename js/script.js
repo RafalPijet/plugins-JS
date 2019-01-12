@@ -7,6 +7,7 @@
     var template = document.getElementById("template-slide-item").innerHTML;
     var map = null;
     var check = true;
+
     Mustache.parse(template);
 
     for (var i = 0; i < slideData.length; i++) {
@@ -22,6 +23,7 @@
         imageLoaded: true,
         percentPosition: false
     });
+
     restartButton.addEventListener("click", function() {
         flkty.selectCell(0);
     })
@@ -49,6 +51,7 @@
             position: pos,
             map: map
         });
+
         google.maps.event.addListener(marker, "click", function () {
             check = false;
             map.setZoom(12);
