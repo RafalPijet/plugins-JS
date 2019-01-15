@@ -12,7 +12,8 @@
 
     for (var i = 0; i < slideData.length; i++) {
         var generatedSlide = Mustache.render(template, slideData[i]);
-        result.insertAdjacentHTML("beforeEnd", generatedSlide);
+        // result.insertAdjacentHTML("beforeEnd", generatedSlide);
+        elem.insertAdjacentHTML("beforeEnd", generatedSlide);
     }
     
     var flkty = new Flickity(elem, {
@@ -53,6 +54,7 @@
         });
 
         google.maps.event.addListener(marker, "click", function () {
+
             check = false;
             map.setZoom(12);
             flkty.selectCell(i);
@@ -64,7 +66,19 @@
             document.getElementById('map'), {zoom: 12, center: slideData[0].coords});
 
         for (var i = 0; i < slideData.length; i++) {
-            createMarker(slideData[i].coords, i);
+            // createMarker(slideData[i].coords, i);
+            var marker = new google.maps.Marker({
+                position: slideData[i].coords,
+                map: map
+            });
+            //rozwiązanie z funkcją anonimową
+            google.maps.event.addListener(marker, "click", (function (i) {
+                return function() {
+                    check = false;
+                    map.setZoom(12);
+                    flkty.selectCell(i);
+                }
+            })(i));
         }
     }
 })();
