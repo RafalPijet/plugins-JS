@@ -1,52 +1,19 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+body { margin: 0; padding: 0; }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-weight: bold;
-}
+.container { width: 100%; max-width: 1200px; margin: 0 auto; font-weight: bold; }
 
-.main-carousel .carousel-cell {
-  width: 100%;
-  max-height: calc(100vh / 2);
-  min-height: 250px;
-  text-align: center;
-  background-size: cover;
-}
+.main-carousel .carousel-cell { width: 100%; max-height: calc(100vh / 2); min-height: 430px; text-align: center; background-size: cover; }
 
-.main-carousel .carousel-cell img {
-  width: auto;
-  height: auto;
-  max-width: 600px;
-  max-height: 400px;
-}
+.main-carousel .carousel-cell img { width: auto; height: auto; max-width: 600px; max-height: 400px; }
 
-.restart {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 9;
-  border: none;
-  opacity: .5;
-}
+.restart { position: absolute; left: 0; top: 0; font-size: 28px; cursor: pointer; z-index: 9; border: none; opacity: .5; }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #333;
-}
+.progress-bar { height: 20px; width: 0; background: #333; }
+
+#map { height: 450px; width: 100%; }
 
 /* Components */
 /* Sections */
 /* Pages / Views */
-/*# sourceMappingURL=style.css.map */
